@@ -486,3 +486,211 @@ ul {
 }
 
 
+
+@media only screen and (max-width: 601px) and (min-width: 50px) {  
+    .card-productos__descripcion {
+       font-size: 17px;
+    }
+
+    .productos__contenido {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        max-width: 500px;
+        margin: 0 auto;
+        gap: 10px
+    }
+    
+    .productos__titulo {
+        font-size: 20px;
+        text-align: center;
+        margin: 10px;
+        color: whitesmoke;
+    }
+    .mainbanner__enlace {
+        width: 150px;
+
+    }
+    .mainbanner {
+        font-size: 15px;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mainbanner__enlace {
+        background-color: #1DAF0D;
+        width: 200px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 10px;
+        padding: 9px 0;
+        margin-top: 10px;
+        color: #9f0daf;
+        font-weight: bold;
+        border: 1px solid #1DAF0D;
+    }
+
+
+    .card-productos__enlace {
+        background-color: #1DAF0D;
+        border: 2px solid #1DAF0D;
+        
+        width: 100px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 10px;
+        padding: 15px 0;
+        margin-top: 120px;
+        margin-left: 175px;
+        font-weight: bold;
+        color: #9f0daf;
+        /* propiedad utilizada para pasar el texto a mayusculas */
+        text-transform: uppercase;
+    }
+
+    .bannerinfo__contenido-dato {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .bannerinfo__contenido-dato span {
+        font-size: 12px;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .iframe-maps__titulo {
+        font-size: 20px;
+        text-align: center;
+        margin: 20px;
+        color: whitesmoke;
+    }
+
+    .iframe-maps__contenido iframe{
+        height: 450px;
+        width: 80%;
+    }
+
+    .pie-pagina__contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 600px;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .navbar__contenido {
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+  }
+
+  @media only screen and (max-width: 1001px) and (min-width: 601px) {  
+    .card-productos__descripcion {
+       font-size: 14px;
+    }
+
+    .productos__contenido {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 750px;
+        margin: 0 auto;
+        gap: 10px
+    }
+    
+    .productos__titulo {
+        font-size: 30px;
+        text-align: center;
+        margin: 10px;
+        color: whitesmoke;
+    }
+
+    .mainbanner__enlace {
+        width: 200px;
+    }
+
+    .mainbanner {
+        font-size: 16px;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mainbanner__enlace {
+        background-color: #1DAF0D;
+        width: 250px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 10px;
+        padding: 9px 0;
+        margin-top: 10px;
+        color: #9f0daf;
+        font-weight: bold;
+        border: 1px solid #1DAF0D;
+    }
+
+    .card-productos__enlace {
+        background-color: #1DAF0D;
+        border: 2px solid #1DAF0D;
+        width: 200px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 10px;
+        padding: 15px 0;
+        margin-top: 120px;
+        margin-left: 50px;
+        font-weight: bold;
+        color: #9f0daf;
+        /* propiedad utilizada para pasar el texto a mayusculas */
+        text-transform: uppercase;
+    }
+
+    .bannerinfo__contenido-dato {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .bannerinfo__contenido-dato span {
+        font-size: 15px;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .iframe-maps__titulo {
+        font-size: 30px;
+        text-align: center;
+        margin: 20px;
+        color: whitesmoke;
+    }
+
+    .iframe-maps__contenido iframe{
+        height: 550px;
+        width: 80%;
+    }
+
+    .pie-pagina__contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .navbar__contenido {
+        display: flex;
+        font-size: 15px;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+  }
