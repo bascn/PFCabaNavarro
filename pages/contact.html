@@ -4,84 +4,109 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>>ba$$nkr$ - Contact</title>
-        
+
         <link rel="stylesheet" href="./../style.css" />
-        
+
         <link rel="shortcut icon" href="./../resources/favicon.ico"
             type="image/x-icon"/>
-            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
 
     </head>
     <body>
         <header class="navbar">
 
             <div class="navbar__contenido">
-              
+
                 <nav class="navbar-menu">
                     <ul class="navbar__contenido-menu">
-                        <li class="navbar-logo"> <a href="./../index.html"><span data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
-                            data-aos-offset="0" class="navbar__contenido-logo-1"></span><span data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
-                            data-aos-offset="0">>ba$$snkr$</span></a></li>
-                        <li class="navbar-toggle"><i class="large material-icons">dehaze</i></li>
+                        <li class="navbar-logo"> <a href="./../index.html"><span
+                                    data-aos="fade-zoom-in"
+                                    data-aos-easing="ease-in-back"
+                                    data-aos-delay="300"
+                                    data-aos-offset="0"
+                                    class="navbar__contenido-logo-1"></span><span
+                                    data-aos="fade-zoom-in"
+                                    data-aos-easing="ease-in-back"
+                                    data-aos-delay="300"
+                                    data-aos-offset="0">>ba$$snkr$</span></a></li>
+                        <li class="navbar-toggle"><i class="large
+                                material-icons">dehaze</i></li>
                         <li c <li class="navbar-link"><a href="./../index.html">Home</a></li>
-                        <li class="navbar-link"><a href="./../pages/instock.html">In Stock</a></li>
-                        <li class="navbar-link"><a href="./../pages/upcoming.html">Up Coming</a></li>
-                        <li class="navbar-link"><a href="./../pages/contact.html">Contact</a></li>
-                        <li class="navbar-link"><a href="./../pages/aboutus.html">About Us</a></li>
+                        <li class="navbar-link"><a
+                                href="./../pages/instock.html">In Stock</a></li>
+                        <li class="navbar-link"><a
+                                href="./../pages/upcoming.html">Up Coming</a></li>
+                        <li class="navbar-link"><a
+                                href="./../pages/contact.html">Contact</a></li>
+                        <li class="navbar-link"><a
+                                href="./../pages/aboutus.html">About Us</a></li>
                     </ul>
                 </nav>
             </div>
 
         </header>
         <main>
-            <section class="mainbanner">
-                    <div class="mainbanner__contenido-contact">
-
+            <section class="mainbanner" data-aos="fade-up-left">
+                <div class="mainbanner__contenido-contact">
+                    <form action="#" method="post">
                         <h1>FORMULARIO DE CONTACTO</h1>
                         <p>
-                            Rellena este formulario y te contactaremos a la brevedad.
+                            Rellena este formulario y te contactaremos a la
+                            brevedad.
                         </p>
                         <p>
-                        <label for="txtNombre">NOMBRE:</label>
-                        <input type="text" placeholder="Ingresa tu Nombre" id="txtNombre"  >
+                            <label for="txtNombre">NOMBRE:</label>
+                            <input class="inputContact" type="text"
+                                placeholder="Ingresa tu Nombre" id="txtNombre">
                         </p>
                         <p>
-                        <label for="txtApellido">APELLIDO:</label>
-                        <input type="text"  placeholder="Ingresa tu Apellido" id="txtApellido"  >
+                            <label for="txtApellido">APELLIDO:</label>
+                            <input class="inputContact" type="text"
+                                placeholder="Ingresa tu Apellido"
+                                id="txtApellido">
                         </p>
                         <p>
-                        <label for="txtEmail">EMAIL:</label>
-                        <input type="email"  placeholder="Ingresa tu Email" id="txtEmail"  >
+                            <label for="txtEmail">EMAIL:</label>
+                            <input class="inputContact" type="email"
+                                placeholder="Ingresa tu Email" id="txtEmail">
                         </p>
                         <p>
-                        <label for="txtFono">FONO:</label>
-                        <input type="text"  placeholder="Ingresa tu Fono con Código Regional (Ej: +56)" id="txtFono"  >
+                            <label for="txtFono">FONO:</label>
+                            <input class="inputContact" type="text"
+                                placeholder="Ingresa tu Fono con Código Regional
+                                (Ej: +56)" id="txtFono">
                         </p>
                         <p>
-                        <label for="txtCategoria">CATEGORIA:</label>
-                        <select id="txtCategoria"  >
-                            <option value="666">Escoge tu tipo de consulta</option>
-                            <option value="0">Consulta General</option>
-                            <option value="1">Consulta sobre Productos</option>
-                            <option value="2">Consulta sobre Pagos</option>
-                            <option value="3">Seguimiento de Pedidos</option>
-                            <option value="4">Reclamos</option>
-                            <option value="5">Sugerencias</option>
-                            <option value="6">Ubicación de Local</option>
-                            <option value="7">Como Ejercer Garantía</option>
-                            <option value="8">Otro Tipo de Contacto</option>
-                        </select>
+                            <label for="txtCategoria">CATEGORIA:</label>
+                            <select class="inputContact" id="txtCategoria">
+                                <option value="666">Escoge tu tipo de consulta</option>
+                                <option value="0">Consulta General</option>
+                                <option value="1">Consulta sobre Productos</option>
+                                <option value="2">Consulta sobre Pagos</option>
+                                <option value="3">Seguimiento de Pedidos</option>
+                                <option value="4">Reclamos</option>
+                                <option value="5">Sugerencias</option>
+                                <option value="6">Ubicación de Local</option>
+                                <option value="7">Como Ejercer Garantía</option>
+                                <option value="8">Otro Tipo de Contacto</option>
+                            </select>
                         </p>
                         <p>
-                        <label for="txtComentario">COMENTARIO</label><br>
-                        <textarea cols="30" rows="10"  placeholder="Ingresa un comentario" id="txtComentario"></textarea>
-                    </p>
-                    <p> <a class="contacto-button" href="">ENVIAR</a></p>
-                    </div>
+                            <label for="txtComentario">COMENTARIO</label><br>
+                            <textarea class="inputContact" cols="30" rows="10"
+                                placeholder="Ingresa un comentario"
+                                id="txtComentario"></textarea>
+                        </p>
+                        <p>
+                            <a type="button" class="contacto-button"
+                                onclick="alert('Formulario de pruebas! Aun no funcional WIP ');">Enviar</a></p>
+                    </form>
+                </div>
             </section>
 
-            
+
         </main>
 
 
