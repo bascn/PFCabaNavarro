@@ -7,30 +7,39 @@
         <link rel="stylesheet" href="./../style.css" />
         <link rel="shortcut icon" href="./../../resources/favicon.ico"
             type="image/x-icon"/>
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <header class="navbar">
-            <div class="navbar__contenido">
-                <h3 class="navbar__contenido-logo"><a href="index.html"><span
-                            class="navbar__contenido-logo-1"></span><span>
-                            >ba$$snkr$</span></a></h3>
-                <nav>
-                    <ul class="navbar__contenido-menu">
-                        <li><a href="./../index.html">Home</a></li>
-                        <li><a href="./instock.html">In Stock</a></li>
-                        <li><a href="./upcoming.html">Up Coming</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="./aboutus.html">About Us</a></li>
 
+            <div class="navbar__contenido">
+              
+                <nav class="navbar-menu">
+                    <ul class="navbar__contenido-menu">
+                        <li class="navbar-logo">  <a href="./../index.html"><span data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                            data-aos-offset="0" class="navbar__contenido-logo-1"></span><span data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                            data-aos-offset="0">>ba$$snkr$</span></a></li>
+                        <li class="navbar-toggle"><i class="large material-icons">dehaze</i></li>
+                        <li class="navbar-link"><a href="./../index.html">Home</a></li>
+                        <li class="navbar-link"><a href="./../pages/instock.html">In Stock</a></li>
+                        <li class="navbar-link"><a href="./../pages/upcoming.html">Up Coming</a></li>
+                        <li class="navbar-link"><a href="./../pages/contact.html">Contact</a></li>
+                        <li class="navbar-link"><a href="./../pages/aboutus.html">About Us</a></li>
                     </ul>
                 </nav>
             </div>
+
         </header>
 
         <main>
-            <section class="mainbanner">
-                <div class="mainbanner__contenido">
+            <section class="mainbanner-instock">
+                <div class="mainbanner-instock__container" data-aos="fade-down-right">
+                    <video data-aos="fade-down-left"
+                        src="../../resources/video/video3.mp4" data-aos="fade-down-right" autoplay muted loop>
+                    </video>
                     <div class="mainbanner__contenido-info-instock">
+                        
                         <h1>REVISA TODOS NUESTROS PRODUCTOS EN STOCK</h1>
                         <p>
                             Aquí obtendrás una lista con todos nuestros productos que están disponibles para su compra inmediata.</p>
@@ -48,7 +57,6 @@
                             <img src="./../resources/img/icon_sec.png" alt="" srcset="">
                             <img src="./../resources/img/icon_shipp.png" alt="" srcset="">
                             <img src="./../resources/img/icon_visa.png" alt="" srcset="">
-                            
                         </p>
                     </div>
                 </div>
@@ -56,7 +64,7 @@
 
             <section class="productos-instock">
                 <div class="productos__contenido-instock">
-                    <article class="card-productos-instock">
+                    <article class="card-productos-instock"  data-aos="flip-right">
                         <div class="card-productos__encabezado-instock">
                             <small class="card-productos__encabezado-etiqueta-instock">¡SOLD OUT!</small>
                             <img class="card-productos__encabezado-imagen-instock"
@@ -65,7 +73,7 @@
                                 Yeezy 450" />
                         </div>
                         <h2 class="card-productos__titulo-instock">adidas Yeezy 450</h2>
-                        <p class="card-productos__descripcion">The adidas Yeezy
+                        <p class="card-productos__descripcion-instock">The adidas Yeezy
                             450 is a lifestyle sneaker from the Kanye West-led
                             and Three Stripes-backed Yeezy imprint. First teased
                             as the Yeezy 451 in July 2018 via sketches by Mr.
@@ -73,7 +81,7 @@
                             as a YEEZY SUPPLY-exclusive.</p>
                         <a class="card-productos__enlace-instock soldout" href="">$199.990</a>
                     </article>
-                    <article class="card-productos">
+                    <article class="card-productos"  data-aos="flip-left">
                         <div class="card-productos__encabezado">
                             <small class="card-productos__encabezado-etiqueta-instock
                                 card-productos__encabezado-etiqueta-instock--destacado">DESTACADO</small>
@@ -83,7 +91,7 @@
                                 Desarrollo web" />
                         </div>
                         <h2 class="card-productos__titulo-instock">adidas Yeezy 500</h2>
-                        <p class="card-productos__descripcion">Though it has
+                        <p class="card-productos__descripcion-instock">Though it has
                             lost a bit of momentum in the past few months, the
                             adidas Yeezy 500 remains one of the most significant
                             in the brand’s product line. Released back in 2018
@@ -92,7 +100,7 @@
                             current formula. </p>
                         <a class="card-productos__enlace-instock" href="">$199.990</a>
                     </article>
-                    <article class="card-productos">
+                    <article class="card-productos" data-aos="flip-right">
                         <div class="card-productos__encabezado">
                             <small class="card-productos__encabezado-etiqueta-instock
                                 card-productos__encabezado-etiqueta-instock--destacado">¡HOT!</small>
@@ -102,7 +110,7 @@
                                 Desarrollo web" />
                         </div>
                         <h2 class="card-productos__titulo-instock">adidas Yeezy 350</h2>
-                        <p class="card-productos__descripcion">Lorem ipsum dolor
+                        <p class="card-productos__descripcion-instock">Lorem ipsum dolor
                             sit amet, consectetur adipiscing elit. Morbi vel
                             metus sit amet lacus viverra tempus vitae sit amet
                             dui. lacus viverra tempus vitae sit amet dui lacus
@@ -111,7 +119,7 @@
                             lorem.</p>
                         <a class="card-productos__enlace-instock" href="">$199.990</a>
                     </article>
-                    <article class="card-productos">
+                    <article class="card-productos"  data-aos="flip-left">
                         <div class="card-productos__encabezado">
 
                             <img class="card-productos__encabezado-imagen"
@@ -121,7 +129,7 @@
                         </div>
                         <h2 class="card-productos__titulo-instock">YZY Foam
                             Runner</h2>
-                        <p class="card-productos__descripcion">The Yeezy Foam
+                        <p class="card-productos__descripcion-instock">The Yeezy Foam
                             Runner is a footwear model designed by musical
                             artist and creative Kanye West. First debuted on the
                             soles of his daughter North West in 2019, the
@@ -130,7 +138,7 @@
                             the Croc. </p>
                         <a class="card-productos__enlace-instock" href="">$199.990</a>
                     </article>
-                    <article class="card-productos">
+                    <article class="card-productos"  data-aos="flip-right">
                         <div class="card-productos__encabezado">
 
                             <img class="card-productos__encabezado-imagen"
@@ -139,7 +147,7 @@
                                 Desarrollo web" />
                         </div>
                         <h2 class="card-productos__titulo-instock">adidas Yeezy Slides</h2>
-                        <p class="card-productos__descripcion">Are slip-on shoes
+                        <p class="card-productos__descripcion-instock">Are slip-on shoes
                             offered via Kanye West's Yeezy brand. Debuted in
                             December 2019, it's released in a handful of tonal
                             colorways. Although Mr. West has previewed dozens of
@@ -148,7 +156,7 @@
                             release.</p>
                         <a class="card-productos__enlace-instock" href="">$199.990</a>
                     </article>
-                    <article class="card-productos">
+                    <article class="card-productos"  data-aos="flip-left">
                         <div class="card-productos__encabezado">
                             <small class="card-productos__encabezado-etiqueta-instock
                             card-productos__encabezado-etiqueta-instock--destacado">¡SOLD OUT!</small>
@@ -158,7 +166,7 @@
                                 Desarrollo web" />
                         </div>
                         <h2 class="card-productos__titulo-instock">YZY NSLTD Boot</h2>
-                        <p class="card-productos__descripcion">The Yeezy
+                        <p class="card-productos__descripcion-instock">The Yeezy
                             line-up, alongside its creator, has become
                             progressively more eccentric. We’re to see a brand
                             new silhouette that’s worlds apart from the 350 v2,
@@ -193,4 +201,9 @@
             </div>
         </footer>
     </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./../resources/js/botonMenu.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </html>

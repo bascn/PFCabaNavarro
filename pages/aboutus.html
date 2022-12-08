@@ -5,26 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>>ba$$nkr$ - About Us</title>
         <link rel="stylesheet" href="./../style.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="shortcut icon" href="./../resources/favicon.ico"
             type="image/x-icon"/>
     </head>
     <body>
         <header class="navbar">
-            <div class="navbar__contenido">
-                <h3 class="navbar__contenido-logo"><a href="./../index.html"><span
-                            class="navbar__contenido-logo-1"></span><span>
-                            >ba$$snkr$</span></a></h3>
-                <nav>
-                    <ul class="navbar__contenido-menu">
-                        <li><a href="./../index.html">Home</a></li>
-                        <li><a href="./instock.html">In Stock</a></li>
-                        <li><a href="./upcoming.html">Up Coming</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="./contact.html">About Us</a></li>
 
+            <div class="navbar__contenido">
+              
+                <nav class="navbar-menu">
+                    <ul class="navbar__contenido-menu">
+                        <li class="navbar-logo">  <a href="./../index.html"><span data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                            data-aos-offset="0" class="navbar__contenido-logo-1"></span><span data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                            data-aos-offset="0">>ba$$snkr$</span></a></li>
+                        <li class="navbar-toggle"><i class="large material-icons">dehaze</i></li>
+                        <li class="navbar-link"><a href="./../index.html">Home</a></li>
+                        <li class="navbar-link"><a href="./../pages/instock.html">In Stock</a></li>
+                        <li class="navbar-link"><a href="./../pages/upcoming.html">Up Coming</a></li>
+                        <li class="navbar-link"><a href="./../pages/contact.html">Contact</a></li>
+                        <li class="navbar-link"><a href="./../pages/aboutus.html">About Us</a></li>
                     </ul>
                 </nav>
             </div>
+
         </header>
 
         <main>
@@ -129,4 +134,9 @@
             </div>
         </footer>
     </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./../resources/js/botonMenu.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </html>
