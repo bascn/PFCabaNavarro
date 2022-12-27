@@ -35,66 +35,80 @@ ul {
   background-color: #d1d2d3;
   padding: 30px 20px;
   border-bottom: 5px solid #b9b9b9; }
+  .navbar .navbar__contenido-menu li {
+    list-style-type: none;
+    padding: 1rem; }
+  .navbar .navbar__contenido-menu .menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #d1d2d3;
+    color: #9f0daf; }
+    .navbar .navbar__contenido-menu .menu-logo {
+      flex: 1;
+      font-size: 1.5rem;
+      user-select: none; }
+      .navbar .navbar__contenido-menu .menu-logo .logo1 {
+        flex: 1;
+        /* propiedades utilñizadas para centrar mi imagen en el logo y que aparezca sobre el texto */
+        display: block;
+        background: url("./../img/img_logo.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 100px;
+        border-radius: 15px;
+        margin-bottom: 5px; }
+    .navbar .navbar__contenido-menu .menu-toggle {
+      display: none;
+      color: #9f0daf; }
+  .navbar .navbar__contenido-menu a {
+    font-weight: bold;
+    background: linear-gradient(to right, #b164c8, #d300c2), linear-gradient(to right, #ff00fb, #0acae7, #e6fb05);
+    background-size: 100% 2px, 0 10px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    color: #9f0daf; }
+  .navbar .navbar__contenido-menu a:hover {
+    background-size: 0 2px, 100% 2px;
+    color: #9f0daf !important; }
 
-.navbar__contenido-menu {
-  display: flex;
-  width: 100%;
-  align-items: center;
+@media only screen and (max-width: 576px) {
+  .navbar .navbar__contenido-menu .menu {
+    flex-wrap: wrap; }
+    .navbar .navbar__contenido-menu .menu-logo .logo1 {
+      display: none; }
+    .navbar .navbar__contenido-menu .menu-toggle {
+      display: block;
+      text-align: center; }
+    .navbar .navbar__contenido-menu .menu-link {
+      display: none;
+      width: 100%;
+      text-align: center; }
+      .navbar .navbar__contenido-menu .menu-link.active {
+        display: block; } }
+
+.pie-pagina {
+  border-top: 5px solid #b9b9b9;
   background-color: #d1d2d3;
-  color: #9f0daf; }
-
-.navbar-toggle {
-  display: none;
-  color: #9f0daf; }
-
-.navbar__contenido-logo-1 {
-  flex: 1;
-  /* propiedades utilñizadas para centrar mi imagen en el logo y que aparezca sobre el texto */
-  display: block;
-  background: url("./resources/img/img_logo.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50px;
-  width: 100px;
-  border-radius: 15px;
-  margin-bottom: 5px; }
-
-.navbar__contenido-menu a {
-  font-weight: bold;
-  background: linear-gradient(to right, #b164c8, #d300c2), linear-gradient(to right, #ff00fb, #0acae7, #e6fb05);
-  background-size: 100% 2px, 0 10px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-  color: #9f0daf; }
-
-.navbar__contenido-menu a:hover {
-  background-size: 0 2px, 100% 2px;
-  color: #9f0daf !important; }
-
-.navbar-menu li {
-  list-style-type: none;
-  padding: 1rem; }
-
-.navbar-logo {
-  flex: 1;
-  font-size: 1.5rem;
-  user-select: none; }
-
-.navbar__contenido-menu {
-  flex-wrap: wrap; }
-
-.navbar-toggle {
-  display: block;
-  text-align: center; }
-
-.navbar-link {
-  display: none;
-  width: 100%;
-  text-align: center; }
-
-.navbar__contenido-logo-1 {
-  display: none; }
+  padding: 30px 20px;
+  border-bottom: 5px solid #b9b9b9; }
+  .pie-pagina__contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-weight: bold; }
+    .pie-pagina__contenido-logo a span {
+      color: #9f0daf;
+      text-decoration: none; }
+    .pie-pagina__contenido-menu a {
+      color: #9f0daf;
+      text-decoration: none; }
+    .pie-pagina__contenido-menu a:hover {
+      text-decoration: underline; }
 
 /* banner principal que contiene el video */
 .mainbanner {
@@ -284,28 +298,7 @@ textarea {
 .iframe-maps__contenido iframe {
   border-radius: 20px; }
 
-/* pie de pagina */
-.pie-pagina {
-  border-top: 5px solid #b9b9b9;
-  background-color: #d1d2d3;
-  padding: 30px 20px;
-  border-bottom: 5px solid #b9b9b9; }
-
-.pie-pagina__contenido {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  font-weight: bold; }
-
-.pie-pagina__contenido-menu a {
-  text-decoration: none; }
-
 /* hovers o propiedades que saltan cuando el mouse esta sobre él */
-.pie-pagina__contenido-menu a:hover {
-  text-decoration: underline; }
-
 .mainbanner__enlace:hover {
   background-color: #17670e;
   color: white;

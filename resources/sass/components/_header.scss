@@ -1,0 +1,100 @@
+/* navbar o encabezado / menu de arriba etc*/
+
+.navbar {
+    background-color: $bg-color;
+    padding: 30px 20px;
+    border-bottom: 5px solid rgb(185, 185, 185);
+
+    & .navbar__contenido {
+        &-menu {
+            & li {
+                list-style-type: none;
+                padding: 1rem;
+            }
+
+            & .menu {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                background-color: $bg-color;
+                color: $primary-color;
+
+                &-logo {
+                    flex: 1;
+                    font-size: 1.5rem;
+                    user-select: none;
+
+                    & .logo1 {
+                        flex: 1;
+                        /* propiedades utilñizadas para centrar mi imagen en el logo y que aparezca sobre el texto */
+                        display: block;
+                        background: url("./../img/img_logo.jpg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        height: 50px;
+                        width: 100px;
+                        border-radius: 15px;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                &-toggle {
+                    display: none;
+                    color: $primary-color;
+                }
+
+                &-link {}
+            }
+
+            & a {
+                font-weight: bold;
+                background: linear-gradient(to right, rgb(177, 100, 200), rgb(211, 0, 194)),
+                    linear-gradient(to right, rgb(255, 0, 251), rgb(10, 202, 231), rgb(230, 251, 5));
+                background-size: 100% 2px, 0 10px;
+                background-position: 100% 100%, 0 100%;
+                background-repeat: no-repeat;
+                transition: background-size 400ms;
+                color: $primary-color;
+            }
+
+            & a:hover {
+                background-size: 0 2px, 100% 2px;
+                color: $primary-color !important;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .navbar {
+        & .navbar__contenido {
+            &-menu {
+                & .menu {
+                    flex-wrap: wrap;
+
+                    &-logo {
+                        & .logo1 {
+                            display: none;
+                        }
+                    }
+
+                    &-toggle {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    &-link {
+                        display: none;
+                        width: 100%;
+                        text-align: center;
+
+                        &.active {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

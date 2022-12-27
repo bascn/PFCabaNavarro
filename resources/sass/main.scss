@@ -1,5 +1,7 @@
+@import 'components/vars';
 @import 'components/global';
-@import 'components/navbar';
+@import 'components/header';
+@import 'components/footer';
 
 /* banner principal que contiene el video */
 
@@ -230,33 +232,10 @@ textarea {
 }
 
 
-/* pie de pagina */
-
-.pie-pagina {
-    border-top: 5px solid rgb(185, 185, 185);
-    background-color: rgb(209, 210, 211);
-    padding: 30px 20px;
-    border-bottom: 5px solid rgb(185, 185, 185);
-}
-
-.pie-pagina__contenido {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-weight: bold;
-}
-
-.pie-pagina__contenido-menu a {
-    text-decoration: none;
-}
 
 /* hovers o propiedades que saltan cuando el mouse esta sobre él */
 
-.pie-pagina__contenido-menu a:hover {
-    text-decoration: underline;
-}
+
 
 .mainbanner__enlace:hover {
     background-color: #17670e;

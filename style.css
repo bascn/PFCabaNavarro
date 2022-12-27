@@ -811,9 +811,6 @@ textarea {
         width: 100%;
         text-align: center;
     }
-    .active {
-        display: block;
-    }
     .navbar__contenido-logo-1 {
         display: none;
     }
