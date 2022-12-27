@@ -1,0 +1,79 @@
+
+
+/* navbar o encabezado / menu de arriba etc*/
+
+.navbar {
+    background-color: rgb(209, 210, 211);
+    padding: 30px 20px;
+    border-bottom: 5px solid rgb(185, 185, 185);
+}
+
+.navbar__contenido-menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #d1d2d3;
+    color: #9f0daf;
+}
+
+.navbar-toggle {
+    display: none;
+    color: #9f0daf;
+}
+
+.navbar__contenido-logo-1 {
+    flex: 1;
+    /* propiedades utilñizadas para centrar mi imagen en el logo y que aparezca sobre el texto */
+    display: block;
+    background: url("./resources/img/img_logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+
+.navbar__contenido-menu a {
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(177, 100, 200), rgb(211, 0, 194)),
+    linear-gradient(to right, rgb(255, 0, 251), rgb(10, 202, 231), rgb(230, 251, 5));
+    background-size: 100% 2px, 0 10px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    color: #9f0daf;
+}
+
+.navbar__contenido-menu a:hover {
+    background-size: 0 2px, 100% 2px;
+    color: #9f0daf !important;
+}
+
+.navbar-menu li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.navbar-logo {
+    flex: 1;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+.navbar__contenido-menu {
+    flex-wrap: wrap;
+}
+.navbar-toggle {
+    display: block;
+    text-align: center;
+}
+.navbar-link {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+.navbar__contenido-logo-1 {
+    display: none;
+}

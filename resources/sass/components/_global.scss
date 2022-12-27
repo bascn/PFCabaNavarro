@@ -1,0 +1,40 @@
+/*  selector universal y fuentes de la web */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'adineue-PRO';
+    src: url('./../../resources/fonts/adineue-PRO-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'adineue-PRO';
+    src: url('./../../resources/fonts/adineue-PRO-Bold.ttf');
+    font-weight: bold;
+}
+
+body {
+    font-family: 'adineue-PRO' !important;
+    background-color: #d1d2d3;
+}
+
+/*  global */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
