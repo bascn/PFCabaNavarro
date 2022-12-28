@@ -46,3 +46,9 @@ textarea {
 .soldout {
     text-decoration: line-through;
 }
+
+@keyframes arcoirisweb {
+    to {
+        background-position: 200% center;
+    }
+}

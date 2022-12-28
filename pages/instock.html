@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,10 +9,16 @@
         <link rel="stylesheet" href="./../resources/css/bootstrap.css">
         <link rel="stylesheet" href="./../resources/css/bootstrap.min.css">
       
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="./../../resources/favicon.ico"
             type="image/x-icon"/>
             <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <meta name="description" content="Bienvenidos al sitio idóneo para encontrar las mejores zapatillas del patroncito al mejor precio, en >ba$$nkr$ encontrarás de todo!"/>
+            <meta name="keywords" content="zapatillas, yeezy, kanye west, venta, sneakers, streetwear, ropa"/>
+            <meta name="robots" content="index,follow" />
+            <meta name="author" content="Bastián Caba N" />
+            <meta name="copyright" content=">ba$$snkr$" />
     </head>
     <body>
         <header class="navbar">
@@ -84,7 +90,8 @@
                             as the Yeezy 451 in July 2018 via sketches by Mr.
                             West himself, the sneaker debuts on March 4th, 2021
                             as a YEEZY SUPPLY-exclusive.</p>
-                        <a class="mainbanner__contenido-info-enlace soldout" href="">$199.990</a>
+                        
+                            <input type="button" class="mainbanner__contenido-info-enlace soldout" data-toggle="modal" data-target="#myModal" value="$599.990">
                     </article>
                     <article class="productos-instock__contenido-card"  data-aos="flip-left">
                         <div class="productos-instock__contenido-card__encabezado-instock">
@@ -100,9 +107,9 @@
                             adidas Yeezy 500 remains one of the most significant
                             in the brand’s product line. Released back in 2018
                             at a retail of $200 USD, the 500 ushered in
-                            something unique, a subversion of the imprint’s
-                            current formula. </p>
-                        <a class="mainbanner__contenido-info-enlace soldout" href="">$199.990</a>
+                            something unique, a subversion of the imprint’s </p>
+                        
+                            <input type="button" class="mainbanner__contenido-info-enlace soldout" data-toggle="modal" data-target="#myModal" value="$199.990">
                     </article>
                     <article class="productos-instock__contenido-card" data-aos="flip-right">
                         <div class="productos-instock__contenido-card__encabezado-instock">
@@ -118,9 +125,8 @@
                             metus sit amet lacus viverra tempus vitae sit amet
                             dui. lacus viverra tempus vitae sit amet dui lacus
                             viverra tempus vitae sit amet dui Phasellus magna
-                            ligula, porta eu ligula sit amet, venenatis faucibus
-                            lorem.</p>
-                        <a class="mainbanner__contenido-info-enlace soldout" href="">$199.990</a>
+                            ligula, porta eu ligula sit amet, venenatis</p>
+                            <input type="button" class="mainbanner__contenido-info-enlace soldout" data-toggle="modal" data-target="#myModal" value="$199.990">
                     </article>
                     <article class="productos-instock__contenido-card"  data-aos="flip-left">
                         <div class="productos-instock__contenido-card__encabezado-instock">
@@ -139,7 +145,7 @@
                             clog-like silhouette immediately sent the sneaker
                             world into a frenzy for its strong similarities to
                             the Croc. </p>
-                        <a class="mainbanner__contenido-info-enlace soldout" href="">$199.990</a>
+                        <input type="button" class="mainbanner__contenido-info-enlace soldout" data-toggle="modal" data-target="#myModal" value="$199.990">
                     </article>
                     <article class="productos-instock__contenido-card"  data-aos="flip-right">
                         <div class="productos-instock__contenido-card__encabezado-instock">
@@ -155,9 +161,8 @@
                             December 2019, it's released in a handful of tonal
                             colorways. Although Mr. West has previewed dozens of
                             hands-free, laceless footwear since joining the
-                            Three Stripes in 2013, very few have seen a retail
-                            release.</p>
-                        <a class="mainbanner__contenido-info-enlace soldout" href="">$199.990</a>
+                            Three Stripes in 2013</p>
+                            <input type="button" class="mainbanner__contenido-info-enlace soldout" data-toggle="modal" data-target="#myModal" value="$199.990">
                     </article>
                     <article class="productos-instock__contenido-card"  data-aos="flip-left">
                         <div class="productos-instock__contenido-card__encabezado-instock">
@@ -173,9 +178,8 @@
                             progressively more eccentric. We’re to see a brand
                             new silhouette that’s worlds apart from the 350 v2,
                             700, and Foam Runner. Feast your eyes on the YZY
-                            NSLTD BT, a winter-ready kit that’s presented here
-                            in a simple colorway.</p>
-                        <a class="mainbanner__contenido-info-enlace soldout" href="">$599.990</a>
+                            NSLTD BT</p>
+                            <input type="button" class="mainbanner__contenido-info-enlace soldout" data-toggle="modal" data-target="#myModal" value="$599.990">
                         
 
                     </article>
@@ -186,6 +190,29 @@
         </main>
 
 
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h1 class="modal-title">¡Lo Sentimos! 😢</h1>
+      </div>
+      <div class="modal-body">
+        <h3>
+        <p>Por el momento no tenemos stock de este producto...</p>
+        <p>Pero te invitamos a que estés atento a nuestra web! 😊</p>
+    </h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="mainbanner__contenido-info-enlace" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
         <footer class="pie-pagina">
             <div class="pie-pagina__contenido">
@@ -204,7 +231,10 @@
         </footer>
     </body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script src="./../resources/js/botonMenu.js"></script>
+    <script src="./../resources/js/bootstrap.js"></script>
+    
     <script>
         AOS.init();
       </script>

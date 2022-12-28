@@ -1,0 +1,27 @@
+.mainbanner{
+    background-color: black;
+    &__contenido-contact{
+        align-items: center;
+        height: 585px;
+        background-color: black;
+        bottom: 0;
+        color: #f1f1f1;
+        padding: 30px;
+        & .inputContact {
+            text-align: center;
+            width: 200px;
+            height: 25px;
+            border-radius: 4px;
+        }
+    }
+    &__contenido-contact p{
+        padding-bottom: 5px;
+    }
+    &__contenido-contact h1{
+        padding-top: 100px;
+    }
+}
+
+.fondoNegro{
+    background-color: black;
+}

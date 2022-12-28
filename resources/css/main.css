@@ -37,6 +37,10 @@ textarea {
 .soldout {
   text-decoration: line-through; }
 
+@keyframes arcoirisweb {
+  to {
+    background-position: 200% center; } }
+
 /* navbar o encabezado / menu de arriba etc*/
 .navbar {
   background-color: #d1d2d3;
@@ -425,78 +429,6 @@ textarea {
       font-size: 11px;
       margin-bottom: 25px; } }
 
-.contacto-button {
-  background-color: #9f0daf;
-  padding: 15px;
-  font-size: 15px;
-  color: white;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  transition: all 500ms cubic-bezier(0.7, 0, 0.2, 1);
-  cursor: pointer;
-  user-select: none;
-  border-radius: 10px;
-  display: inline; }
-
-/* hovers o propiedades que saltan cuando el mouse esta sobre él */
-.contacto-button:hover {
-  background-color: #17670e;
-  color: white;
-  border: 2px solid #0a2e06; }
-
-/*  UP COMING  */
-.card-productos-upcoming {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: whitesmoke;
-  border-radius: 10px;
-  padding-bottom: 20px;
-  height: 600px; }
-
-.card-productos__titulo-upcoming {
-  text-align: center;
-  padding-bottom: 30px;
-  font-size: 35px;
-  font-weight: bold; }
-
-.card-productos__encabezado-imagen-upcoming {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px; }
-
-.productos__contenido-upcoming {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
-  padding-bottom: 40px;
-  padding-top: 25px; }
-
-.mainbanner__contenido-info-upcoming {
-  bottom: 0;
-  /* definimos la imagen que aparezca a la izquiera y llenamos el espacio sobrante de negro */
-  background-position: left;
-  background-repeat: no-repeat;
-  background-color: black;
-  color: #f1f1f1;
-  padding: 150px; }
-
-.card-productos__titulo-upcoming a {
-  -webkit-transition: color 1s;
-  /* For Safari 3.0 to 6.0 */
-  transition: color 1s;
-  /* For modern browsers */
-  color: white; }
-
-.card-productos__titulo-upcoming a:hover {
-  color: #8a2db2;
-  text-shadow: 2px 2px 4px #000000; }
-
-.mainbanner__contenido-info-upcoming img {
-  padding: 5px;
-  width: 50px; }
-
-/* rgb(255, 0, 251),rgb(10, 202, 231),rgb(230, 251, 5)); */
 .upcoming-title {
   margin-top: 10px;
   text-align: center;
@@ -520,35 +452,78 @@ textarea {
 .upcoming-title:hover {
   transform: scale(1.2); }
 
-@keyframes arcoirisweb {
-  to {
-    background-position: 200% center; } }
+.productos-upcoming__contenido {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  padding-bottom: 40px;
+  padding-top: 25px;
+  text-align: center; }
+  .productos-upcoming__contenido-card {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: whitesmoke;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    height: 600px; }
+  .productos-upcoming__contenido-encabezado__imagen {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px; }
+  .productos-upcoming__contenido-precio a {
+    -webkit-transition: color 1s;
+    /* For Safari 3.0 to 6.0 */
+    transition: color 1s;
+    /* For modern browsers */
+    color: white; }
+  .productos-upcoming__contenido-precio a:hover {
+    color: #9f0daf;
+    text-shadow: 2px 2px 4px #000000; }
 
-/*  contact */
-.mainbanner__contenido-contact {
-  align-items: center;
-  height: 585px;
-  background-color: black;
+.mainbanner__contenido-info-upcoming {
   bottom: 0;
+  /* definimos la imagen que aparezca a la izquiera y llenamos el espacio sobrante de negro */
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: black;
   color: #f1f1f1;
-  padding: 30px; }
+  padding: 150px; }
 
-.mainbanner__contenido-contact p {
-  padding-bottom: 5px; }
+.mainbanner__contenido-info-upcoming img {
+  padding: 5px;
+  width: 50px; }
 
-.mainbanner__contenido-contact h1 {
-  padding-top: 100px; }
+@media only screen and (max-width: 576px) {
+  .upcoming-title {
+    font-size: 35px; } }
 
-.inputContact {
-  text-align: center;
-  width: 200px;
-  height: 25px;
-  border-radius: 4px; }
+.mainbanner {
+  background-color: black; }
+  .mainbanner__contenido-contact {
+    align-items: center;
+    height: 585px;
+    background-color: black;
+    bottom: 0;
+    color: #f1f1f1;
+    padding: 30px; }
+    .mainbanner__contenido-contact .inputContact {
+      text-align: center;
+      width: 200px;
+      height: 25px;
+      border-radius: 4px; }
+  .mainbanner__contenido-contact p {
+    padding-bottom: 5px; }
+  .mainbanner__contenido-contact h1 {
+    padding-top: 100px; }
+
+.fondoNegro {
+  background-color: black; }
 
 /*  about us */
 .mainbanner__contenido-info-aboutus-1 {
   bottom: 0;
-  background-image: url("./resources/img/img1.png");
+  background-image: url("./../../resources/img/img1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -562,7 +537,7 @@ textarea {
 
 .mainbanner__contenido-info-aboutus-2 {
   bottom: 0;
-  background-image: url("./resources/img/img2.jpeg");
+  background-image: url("./../../resources/img/img2.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -573,7 +548,7 @@ textarea {
 
 .mainbanner__contenido-info-aboutus-3 {
   bottom: 0;
-  background-image: url("./resources/img/img3.jpg");
+  background-image: url("./../../resources/img/img3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -601,7 +576,13 @@ textarea {
   width: 100px; }
 
 .mainbanner__contenido-info-2x p {
-  font-size: 40px; }
+  font-size: 20px; }
 
 .mainbanner__contenido-info-2x h1 {
-  font-size: 60px; }
+  font-size: 40px; }
+
+@media only screen and (max-width: 576px) {
+  .mainbanner__contenido-info-2x p {
+    font-size: 10px; }
+  .mainbanner__contenido-info-2x h1 {
+    font-size: 20px; } }
