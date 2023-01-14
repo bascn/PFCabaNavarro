@@ -1,7 +1,6 @@
 /*  about us */
-.mainbanner__contenido-info-aboutus-1 {
+.contenidos_aboutus{
     bottom: 0;
-    background-image: url('./../../resources/img/img1.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,6 +8,12 @@
     color: #f1f1f1;
     padding: 150px;
     height: 600px;
+}
+
+.mainbanner__contenido-info-aboutus-1 {
+    @extend .contenidos_aboutus;
+    background-image: url('./../../resources/img/img1.png');
+
 }
 
 .mainbanner__contenido-aboutus {
@@ -16,28 +21,14 @@
 }
 
 .mainbanner__contenido-info-aboutus-2 {
-    bottom: 0;
+    @extend .contenidos_aboutus;
     background-image: url('./../../resources/img/img2.jpeg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgb(0, 0, 0);
-    color: #f1f1f1;
-    padding: 150px;
-    height: 600px;
 }
 
 .mainbanner__contenido-info-aboutus-3 {
-    bottom: 0;
+    @extend .contenidos_aboutus;
     background-image: url('./../../resources/img/img3.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgb(0, 0, 0);
-    color: #f1f1f1;
-    padding: 150px;
-    height: 600px;
-}
+ }
 
 .mainbanner__contenido-info-about {
     display: table;
@@ -69,6 +60,20 @@
 .mainbanner__contenido-info-2x h1 {
     font-size: 40px;
 }
+
+
+@media only screen and (max-width: 820px) {
+    .mainbanner__contenido-info-2x p {
+        font-size: 20px;
+    
+    }
+    
+    .mainbanner__contenido-info-2x h1 {
+        font-size: 30px;
+    }
+}
+
+
 
 @media only screen and (max-width: 576px) {
     .mainbanner__contenido-info-2x p {

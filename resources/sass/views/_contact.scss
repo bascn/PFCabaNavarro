@@ -5,13 +5,14 @@
         height: 585px;
         background-color: black;
         bottom: 0;
-        color: #f1f1f1;
+        color: #a09d9d;
         padding: 30px;
         & .inputContact {
             text-align: center;
             width: 200px;
             height: 25px;
             border-radius: 4px;
+            height: auto;
         }
     }
     &__contenido-contact p{
