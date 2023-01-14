@@ -488,6 +488,9 @@ textarea {
       font-size: 11px;
       margin-bottom: 25px; } }
 
+.div-titulo {
+  text-align: center; }
+
 .upcoming-title {
   margin-top: 10px;
   text-align: center;
