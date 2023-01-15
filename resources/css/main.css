@@ -252,7 +252,7 @@ textarea {
   .iframe-maps__contenido iframe {
     border-radius: 20px; }
 
-@media only screen and (max-width: 758px) {
+@media only screen and (max-width: 768px) {
   .productos__titulo {
     font-size: 20px;
     text-align: center;
@@ -448,7 +448,7 @@ textarea {
       border: 2px solid #0a2e06;
       text-decoration: none; }
 
-@media only screen and (max-width: 758px) {
+@media only screen and (max-width: 768px) {
   .mainbanner-instock__container-info-h1 {
     font-size: 30px; }
   .mainbanner-instock__container-info-p {
@@ -556,7 +556,7 @@ textarea {
   padding: 5px;
   width: 50px; }
 
-@media only screen and (max-width: 758px) {
+@media only screen and (max-width: 768px) {
   .productos-upcoming__contenido {
     max-width: 720px; }
   .mainbanner__contenido-info-upcoming h1 {
@@ -644,7 +644,7 @@ textarea {
 .mainbanner__contenido-info-2x h1 {
   font-size: 40px; }
 
-@media only screen and (max-width: 758px) {
+@media only screen and (max-width: 768px) {
   .mainbanner__contenido-info-2x p {
     font-size: 20px; }
   .mainbanner__contenido-info-2x h1 {
