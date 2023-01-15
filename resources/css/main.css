@@ -252,7 +252,7 @@ textarea {
   .iframe-maps__contenido iframe {
     border-radius: 20px; }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 758px) {
   .productos__titulo {
     font-size: 20px;
     text-align: center;
@@ -261,7 +261,7 @@ textarea {
   .productos__contenido {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 730px;
+    max-width: 720px;
     margin: 0 auto;
     gap: 10px; }
     .productos__contenido .card-productos__encabezado__enlace {
@@ -448,7 +448,7 @@ textarea {
       border: 2px solid #0a2e06;
       text-decoration: none; }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 758px) {
   .mainbanner-instock__container-info-h1 {
     font-size: 30px; }
   .mainbanner-instock__container-info-p {
@@ -556,7 +556,9 @@ textarea {
   padding: 5px;
   width: 50px; }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 758px) {
+  .productos-upcoming__contenido {
+    max-width: 720px; }
   .mainbanner__contenido-info-upcoming h1 {
     font-size: 50px; }
   .mainbanner__contenido-info-upcoming p {
@@ -567,6 +569,8 @@ textarea {
     font-size: 50px; } }
 
 @media only screen and (max-width: 576px) {
+  .productos-upcoming__contenido {
+    max-width: 530px; }
   .upcoming-title {
     font-size: 35px; } }
 
@@ -640,7 +644,7 @@ textarea {
 .mainbanner__contenido-info-2x h1 {
   font-size: 40px; }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 758px) {
   .mainbanner__contenido-info-2x p {
     font-size: 20px; }
   .mainbanner__contenido-info-2x h1 {
