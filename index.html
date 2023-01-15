@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    
     <!-- Se implementa bootstrap de forma local : -->
     <link rel="stylesheet" href="./resources/css/bootstrap.css">
     <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
@@ -90,7 +92,7 @@
                         as the Yeezy 451 in July 2018 via sketches by Mr.
                         West himself, the sneaker debuts on March 4th, 2021
                         as a YEEZY SUPPLY-exclusive.</p>
-                    <a class="card-productos__enlace" href="">Saber más</a>
+                        <input type="button" data-toggle="modal" data-target="#myModal" value="Saber más" class="card-productos__enlace" />
                 </article>
                 <article class="card-productos" data-aos="flip-left">
                     <div class="card-productos__encabezado">
@@ -108,7 +110,7 @@
                         at a retail of $200 USD, the 500 ushered in
                         something unique, a subversion of the imprint’s
                         current formula. </p>
-                    <a class="card-productos__enlace" href="">Saber más</a>
+                        <input type="button" data-toggle="modal" data-target="#myModal" value="Saber más" class="card-productos__enlace" />
                 </article>
                 <article class="card-productos" data-aos="flip-left">
                     <div class="card-productos__encabezado">
@@ -126,7 +128,7 @@
                         viverra tempus vitae sit amet dui Phasellus magna
                         ligula, porta eu ligula sit amet, venenatis faucibus
                         lorem.</p>
-                    <a class="card-productos__enlace" href="">Saber más</a>
+                        <input type="button" data-toggle="modal" data-target="#myModal" value="Saber más" class="card-productos__enlace" />
                 </article>
                 <article class="card-productos" data-aos="flip-right">
                     <div class="card-productos__encabezado">
@@ -144,7 +146,7 @@
                         clog-like silhouette immediately sent the sneaker
                         world into a frenzy for its strong similarities to
                         the Croc. </p>
-                    <a class="card-productos__enlace" href="">Saber más</a>
+                        <input type="button" data-toggle="modal" data-target="#myModal" value="Saber más" class="card-productos__enlace" />
                 </article>
                 <article class="card-productos" data-aos="flip-right">
                     <div class="card-productos__encabezado">
@@ -161,7 +163,7 @@
                         hands-free, laceless footwear since joining the
                         Three Stripes in 2013, very few have seen a retail
                         release.</p>
-                    <a class="card-productos__enlace" href="">Saber más</a>
+                        <input type="button" data-toggle="modal" data-target="#myModal" value="Saber más" class="card-productos__enlace" />
                 </article>
                 <article class="card-productos" data-aos="flip-right">
                     <div class="card-productos__encabezado">
@@ -178,7 +180,7 @@
                         700, and Foam Runner. Feast your eyes on the YZY
                         NSLTD BT, a winter-ready kit that’s presented here
                         in a simple colorway.</p>
-                    <a class="card-productos__enlace" href="">Saber más</a>
+                    <input type="button" data-toggle="modal" data-target="#myModal" value="Saber más" class="card-productos__enlace" />
                 </article>
             </div>
         </section>
@@ -208,6 +210,32 @@
         </section>
         <!-- FIN DE CONTACTO -->
     </main>
+
+    <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h1 class="modal-title">¡Lo Sentimos! 😢</h1>
+        </div>
+        <div class="modal-body">
+          <h3>
+          <p>Por el momento no tenemos stock de este producto...</p>
+          <p>Pero te invitamos a que estés atento a nuestra web! 😊</p>
+      </h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="mainbanner__contenido-info-enlace" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <!-- FIN MODAL -->
     <!-- INICIO FOOTER - PIE DE PAGINA -->
     <footer class="pie-pagina">
         <div class="pie-pagina__contenido">
@@ -228,7 +256,8 @@
     <!-- FIN DEL FOOTER -->
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="resources/js/botonMenu.js"></script>
+<script src="./resources/js/bootstrap.js"></script>
+<script src="./resources/js/botonMenu.js"></script>
 <script>
     AOS.init();
 </script>
